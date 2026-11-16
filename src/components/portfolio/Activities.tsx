@@ -3,7 +3,7 @@ import { activities } from "@/lib/site";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
-const icons: Record<string, LucideIcon> = { sparkles: Sparkles, bot: Bot, trophy: Trophy, wrench: Wrench };
+const icons = { sparkles: Sparkles, bot: Bot, trophy: Trophy, wrench: Wrench } satisfies Record<string, LucideIcon>;
 
 export function Activities() {
   return (

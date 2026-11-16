@@ -15,6 +15,6 @@ describe("contact form", () => {
       message: "Let's collaborate",
     });
     expect(url.startsWith("mailto:afnanqureshi4444@gmail.com?subject=Project%20%26%20idea&body=")).toBe(true);
-    expect(decodeURIComponent(url.split("body=")[1])).toBe("Let's collaborate\n\n— Sara (sara@example.com)");
+    expect(decodeURIComponent(url.split("body=")[1] ?? "")).toBe("Let's collaborate\n\n— Sara (sara@example.com)");
   });
 });

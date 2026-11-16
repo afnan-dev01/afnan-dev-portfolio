@@ -4,7 +4,7 @@ import { skillGroups } from "@/lib/site";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
-const icons: Record<string, LucideIcon> = { code: Code2, brain: BrainCircuit, cpu: Cpu, users: Users };
+const icons = { code: Code2, brain: BrainCircuit, cpu: Cpu, users: Users } satisfies Record<string, LucideIcon>;
 
 export function Skills() {
   return (
