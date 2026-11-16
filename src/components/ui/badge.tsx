@@ -14,6 +14,9 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
         outline: "text-foreground",
+        tech: "rounded-full border-primary/25 bg-primary/10 px-3 py-1 font-mono text-[0.7rem] font-medium text-primary-glow",
+        skill:
+          "rounded-full border-border bg-surface-raised/70 px-3 py-1.5 text-[0.8rem] font-medium text-secondary-foreground transition-colors hover:border-primary/40 hover:text-foreground",
       },
     },
     defaultVariants: {
